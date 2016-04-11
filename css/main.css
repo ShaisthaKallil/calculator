@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+   box-sizing:border-box;
+   font-size:62.5%;
+}
+*,*:before,*:after{
+   box-sizing:inherit;
+}
+@font-face{
+ font-family:myFont;
+ src: url(digital-7.ttf);	
+}
+
+#container{
+   background-color:brown;
+   height:500px;
+   width:500px;
+   position:relative;
+  /* left:200px;*/
+  top:30px;
+  margin:auto;
+   border:2px solid #999;
+}
+
+#calculator{
+   position:absolute;
+   left:85px;
+   top:25px;
+   height:450px;
+   width:325px;
+   background-color:#222;
+   border-left:8px solid #555;
+   border-top:5px solid #222;
+   border-right:3px solid black;
+   border-bottom:2px solid black;
+   border-radius:10px;
+}
+
+table{
+   background-color:#999;
+   border:2px solid #222;
+   margin:0 auto;
+   padding:15px;
+   position:relative;
+   top:76px;
+}
+
+input{
+   height:65px;
+   width:267px;
+   font-size:3rem;
+   position:relative;
+   top:42px;
+   left:25px;
+   border:2px solid #fff;
+   background-color:#bccd95;
+   text-align:right;
+}
+
+input[type="text"]{
+   font-family:myFont;
+   font-size:42px;
+}
+
+button{
+   height:50px;
+   width:50px;
+   font-size:2rem;
+   margin-right:6px;
+   margin-bottom:8px;
+   border:1px solid #111;
+   border-radius:10px;
+   border-left:3px solid #444;
+   border-right:1px solid #222;
+   border-bottom:4px solid black;
+
+   cursor:pointer;
+   transition:all 0.5s ease;
+}
+
+button:hover{
+   background-color:#89abf5;
+   font-weight:bold;
+}
+
+#add{
+   background-color:lightyellow;
+   font-size: 2rem;
+}
+
+#subtract{
+   background-color:lightblue;
+   font-size:3rem;
+}
+
+#multiply{
+   background-color:lightgreen;
+   font-size:2.5rem;
+}
+
+#divide{
+   background-color:#f5cc89;
+   font-size:2rem;
+}
+
+#equals {
+   background-color:#dc57f0;
+}
+
+#clear{
+   color:#fff;
+   background-color:#000;
+}
+

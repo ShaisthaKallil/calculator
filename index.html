@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Calculator</title>
+
+<!-- stylesheet -->
+<link href ="css/main.css" type = "text/css" rel="stylesheet" />
+
+<!-- script -->
+<script src ="js/appCal.js" type ="text/javascript" ></script>
+</head>
+
+<!-- @shaistha :: shaistha@shaikallil.info :: March 31, 2016 -->
+<!-- Basic Calculator -->
+
+<body>
+<div id = "container">
+   <div id = "calculator">
+      <!-- display screen -->
+      <input type = "text" readonly name = "view" placeholder = "000"id = "view">
+      
+      <!-- number buttons -->
+     <table>
+          
+        <tr><td><button id = "one" value = "1" onclick='insertVal("1")'>1</div></td>
+           <td><button id = "two" value = "2" onclick= 'insertVal("2")'>2</div></td>
+           <td><button id = "three" value = "3" onclick= 'insertVal("3")'>3</div></td>
+        <td><button id = "add" value = "+" onclick= 'insertVal("+")'>+</div></td></tr>
+        
+        <tr><td> <button id = "four" value = "4" onclick= 'insertVal("4")'>4</div></td>
+        <td><button id = "five" value = "5" onclick= 'insertVal("5")'>5</div></td>
+         <td><button id = "six" value = "6" onclick= 'insertVal("6")'>6</div></td>
+        <td><button id = "subtract"value = "-" onclick= 'insertVal("-")'>-</div></td></tr>
+        
+        <tr><td><button id = "seven" value = "7" onclick= 'insertVal("7")'>7</div></td>
+           <td><button id = "eight" value = "8" onclick= 'insertVal("8")'>8</div></td>
+           <td><button id = "nine" value = "9" onclick= 'insertVal("9")'>9</div></td>
+        <td><button id = "multiply" value = "*" onclick= 'insertVal("*")'>*</div></td></tr>
+        
+        <tr><td><button id = "clear" value = "clr" onclick= 'erase("")'>clr</div></td>
+         <td><button id = "zero" value = "0" onclick= 'insertVal("0")'>0</div></td>
+         <td><button id = "equals" value = "=" onclick= 'equal()'>=</div></td>
+        <td><button id = "divide" onclick='insertVal("/")'>/</div></td></tr>
+      
+      </table>
+   </div>
+</div>
+</body>
+</html>
